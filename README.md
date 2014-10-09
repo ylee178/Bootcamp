@@ -1,7 +1,7 @@
 Project: FreePark
 INTRODUCTION:
 ---------------------------------
-Project Goal: To create a  web app that shows all free parking 24/7 in the auckland city CBD
+Project Goal: To create a  web app that shows all free parking 24/7 in the Auckland city CBD
 Features: 	
 * Goolge Map API with Customized Markers of Free parking.
 
@@ -20,17 +20,3 @@ configuration.
 TROUBLESHOOTING AND FAQ
 ---------------------------------
 Report error for any issues that need to be troubleshooted.
-
-CONTACT
----------------------------------
-Twitter
-password: 321decode
-user: FpxDeCode
-
-Gmail
-password: fpxdecode
-fpx.decode@gmail.com
-
-Facebook
-admins have been added where I can.
-
