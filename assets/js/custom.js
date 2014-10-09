@@ -1,16 +1,43 @@
 var map;
 function initialize() {
 
+  var contentString1 = '<h2>Ramp D to Ian McKinnon Drive</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/ian-mckinnon.png" alt="image">';
+
+  var contentString2 = '<h2>Alex Evans Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/" alt="image">';
+
+  var contentString3 = '<h2>Alex Evans Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/" alt="image">';
+
+  var contentString4 = '<h2>Nugent Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/" alt="image">';
+
+  var contentString5 = '<h2>Burleigh Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/" alt="image">';
+
+  var contentString6 = '<h2>Davis Crescent</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/" alt="image">';
+
+  var contentString7 = '<h2>Chapman Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/" alt="image">';
 
 // Joel - variable below sets the location of all the markers in an array =============================
   var locations = [
-    ['Free Parking All Day', -36.860534, 174.752797, 7],
-    ['Free Parking All Day', -36.865959, 174.777759, 6],
-    ['Free Parking All Day', -36.865609, 174.762265, 5],
-    ['Free Parking All Day', -36.866476, 174.763598, 4],
-    ['Free Parking All Day', -36.861021, 174.761583, 3],
-    ['Free Parking All Day', -36.861021, 174.761583, 2],
-    ['Free Parking All Day', -36.868050, 174.753222, 1]
+    [contentString7, -36.860534, 174.752797, 7],
+    [contentString6, -36.865959, 174.777759, 6],
+    [contentString5, -36.865609, 174.762265, 5],
+    [contentString4, -36.866476, 174.763598, 4],
+    [contentString3, -36.861021, 174.761583, 3],
+    [contentString2, -36.861021, 174.761583, 2],
+    [contentString1, -36.868050, 174.753222, 1]
   ];
 
   // Joel - The variable that sets the center of the map when the page loads. =========================
