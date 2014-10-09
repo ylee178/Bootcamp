@@ -1,0 +1,47 @@
+ /* Author: Decoders;
+  * Title: stylesheet.scss;
+ */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#map-canvas {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 1280px;
+    margin:0;
+    padding: 0;
+    }
+
+.logo {
+    z-index: 100; 
+    position: fixed;
+    top: 0;
+    width: 38%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 135px;
+}
+
+.text {
+    z-index: 50;
+    position: fixed;
+    left: 45%;
+    top: -1%;
+h2{
+    font-size: 15px;
+}
+h3{
+    font-size: 9px;
+}
+
+}
