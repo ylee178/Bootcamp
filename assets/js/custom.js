@@ -146,7 +146,7 @@ function initialize() {
   map.setMapTypeId('map_style');
 
 
-  var image = 'assets/img/car-icon.png';
+  var image = 'assets/img/marker.png';
 
   // Joel - Sets the marker and uses the array above to insert all icons in locations =================
   var marker, i;
