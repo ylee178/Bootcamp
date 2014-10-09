@@ -2,31 +2,31 @@ var map;
 function initialize() {
 
   var contentString1 = '<h2>Ramp D to Ian McKinnon Drive</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/ian-mckinnon.png" alt="image">';
 
   var contentString2 = '<h2>Alex Evans Street</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/alex-evans.png" alt="image">';
 
   var contentString3 = '<h2>Alex Evans Street</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/alex-evans.png" alt="image">';
 
   var contentString4 = '<h2>Nugent Street</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/nugent-st.png" alt="image">';
 
   var contentString5 = '<h2>Burleigh Street</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/burleigh-st.png" alt="image">';
 
   var contentString6 = '<h2>Davis Crescent</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/davis-cres.png" alt="image">';
 
   var contentString7 = '<h2>Chapman Street</h2>' +
-  '<p>Free parking all day at this location.</p>' +
+  '<p>Free parking all day at this great location.</p>' +
   '<img src="assets/img/chapman-st.png" alt="image">';
 
 // Joel - variable below sets the location of all the markers in an array =============================
