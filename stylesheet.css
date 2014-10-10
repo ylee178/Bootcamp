@@ -1,0 +1,21 @@
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* line 5, assets/sass/_body.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, assets/sass/_body.scss */
+#map-canvas {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 1280px;
+  margin: 0;
+  padding: 0;
+}

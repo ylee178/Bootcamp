@@ -20,3 +20,17 @@ configuration.
 TROUBLESHOOTING AND FAQ
 ---------------------------------
 Report error for any issues that need to be troubleshooted.
+
+CONTACT
+---------------------------------
+Twitter
+password: 321decode
+user: FpxDeCode
+
+Gmail
+password: fpxdecode
+fpx.decode@gmail.com
+
+Facebook
+admins have been added where I can.
+
