@@ -1,31 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Free park</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<title>Free Park</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="assets/js/custom.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script type="text/javascript">
-  jQuery(function($) {
-    var open = false;
-    $('#footerSlideButton').click(function () {
-      if(open === false) {
-        $('#footerSlideContent').animate({ height: '670px' });
-        $(this).css('backgroundPosition', 'bottom left');
-        open = true;
-      } else {
-        $('#footerSlideContent').animate({ height: '0px' });
-        $(this).css('backgroundPosition', 'top left');
-        open = false;
-      }
-    });   
-  });
+	jQuery(function($) {
+		var open = false;
+		$('#footerSlideButton').click(function () {
+			if(open === false) {
+				$('#footerSlideContent').animate({ height: '670px' });
+				$(this).css('backgroundPosition', 'bottom left');
+				open = true;
+			} else {
+				$('#footerSlideContent').animate({ height: '0px' });
+				$(this).css('backgroundPosition', 'top left');
+				open = false;
+			}
+		});		
+	});
 </script>
 <style type="text/css">
 @font-face {
@@ -39,101 +38,95 @@
     font-style: normal;
 }
 body {
-  margin:0;
-  padding:0;
-  background: #EFEFEF;
+	margin:0;
+	padding:0;
+	background: #EFEFEF;
 }
 #footerSlideContainer {
-  position: fixed;
-  bottom:0;
-  width: 100%;
-  left: 0;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	left: 0;
     padding-left: 0;
     padding-right: 0;
     right: 0px;
 }
 #footerSlideButton {
-  background: url(about3.png) top left no-repeat transparent;
-  position: relative;
-  top: 140px;
-  
-  width:230px;
-  height:116px;
-  border: none;
-  cursor: pointer;
+	background: url(about3.png) top left no-repeat transparent;
+	position: relative;
+	top: 140px;
+	
+	width:230px;
+	height:116px;
+	border: none;
+	cursor: pointer;
 }
 #footerTop {
-  background: url(background-top4.png) no-repeat top;
-  width: 100%;
-  height: 150px;
-  z-index: 2;
-  display: block;
+	background: url(background-top4.png) no-repeat top;
+	width: 100%;
+	height: 150px;
+	z-index: 2;
+	display: block;
 }
 #footerSlideContent {
-  width: 100%;
-  height: 0px;
-  background: url(background-fill.jpg);
-  color: #CCCCCC;
-  font-size: 0.8em;
-  border: none;
-  font-family: DejaVuSansBook, Sans-Serif;
+	width: 100%;
+	height: 0px;
+	background: url(background-fill.jpg);
+	color: #CCCCCC;
+	font-size: 0.8em;
+	border: none;
+	font-family: DejaVuSansBook, Sans-Serif;
 }
 #footerSlideContent h3 {
-  font-size: 36px;
-  color: #9AC941;
-  margin: 10px 0 10px 0;
+	font-size: 36px;
+	color: #9AC941;
+	margin: 10px 0 10px 0;
 }
 #footerSlideContent ul {
-  color: #EE8D40;
-  list-style-type: none;
-  line-height: 2em;
+	color: #EE8D40;
+	list-style-type: none;
+	line-height: 2em;
 }
 #footerSlideText {
-  padding: 15px 10px 25px 25px;
+	padding: 15px 10px 25px 25px;
 }
 #lookHere {
-  font-family: DejaVuSansBook, Sans-Serif;
+	font-family: DejaVuSansBook, Sans-Serif;
 }
 #lookHere h1, #lookHere h2 {
-  font-size: 20em;
-  padding: 0;
-  margin: 0;
-  color: #AAAAAA;
+	font-size: 20em;
+	padding: 0;
+	margin: 0;
+	color: #AAAAAA;
 }
 #lookHere h2 {
-  font-size: 1.5em;
-  margin: 0 0 0 30px;
+	font-size: 1.5em;
+	margin: 0 0 0 30px;
 }
 #lookHere span.orange {
-  color: #EE8D40;
+	color: #EE8D40;
 }
 #lookHere span.green {
-  color: #9AC941;
+	color: #9AC941;
 }
 </style>
-  </head>
-  <body>
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1"  id="map-canvas">
+	</div>
+	<div class="row">
 
-    <!-- division that contains the map -->
-    <div class="col-md-10 col-md-offset-1"  id="map-canvas">
-        
-    </div>
-    <div class="col-lg-12" id="footerSlideContainer">
-
-  <div id="footerSlideButton"></div>
-  <div id="footerTop"></div>
-  <div id="socialButton"></div>
-  <div id="footerSlideContent" class="container">
-    <div class="col-xs-6">
-
-    <div id="footerSlideText">
-
-      
-      
-    </div>
-  </div>
+<div class="col-lg-12" id="footerSlideContainer">
+	<div id="footerSlideButton"></div>
+	<div id="footerTop"></div>
+	<div id="socialButton"></div>
+	<div id="footerSlideContent">
+		<div id="footerSlideText">
+			
+			
+		</div>
+	</div>
 </div>
-
-  </body>
+</body>
 </html>
-
