@@ -19,3 +19,29 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+	background-image: url('assets/background-fill.jpg');
+	z-index: 1;
+	color: #fff;
+} 
+
+.header {
+	background-image: url('assets/background-top.jpg');
+	z-index: 2;
+	margin: 0;
+	display: block;
+	background-repeat: repeat-x;
+}
+
+.top {
+	display: block;
+}
+
+h2 {
+	text-align: center;
+}
+
+ul { 
+	list-style: none;
+}
