@@ -1,33 +1,48 @@
 var map;
 function initialize() {
 
-  var contentString1 = '<h2>Ramp D to Ian McKinnon Drive</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/ian-mckinnon.png" alt="image">';
+// All the variables set for each marker =============================================================
+  var contentString1 = '<div id="cs1" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Ramp D to Ian McKinnon Drive</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/ian-mckinnon.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
-  var contentString2 = '<h2>Alex Evans Street</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/alex-evans.png" alt="image">';
+  var contentString2 = '<div id="cs2" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Alex Evans Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/alex-evans.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
-  var contentString3 = '<h2>Alex Evans Street</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/alex-evans.png" alt="image">';
+  var contentString3 = '<div id="cs3" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Alex Evans Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/alex-evans.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
-  var contentString4 = '<h2>Nugent Street</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/nugent-st.png" alt="image">';
+  var contentString4 = '<div id="cs4" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Nugent Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/nugent-st.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
-  var contentString5 = '<h2>Burleigh Street</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/burleigh-st.png" alt="image">';
+  var contentString5 = '<div id="cs5" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Burleigh Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/burleigh-st.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
-  var contentString6 = '<h2>Davis Crescent</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/davis-cres.png" alt="image">';
+  var contentString6 = '<div id="cs6" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Davis Crescent</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/davis-cres.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
-  var contentString7 = '<h2>Chapman Street</h2>' +
-  '<p>Free parking all day at this great location.</p>' +
-  '<img src="assets/img/chapman-st.png" alt="image">';
+  var contentString7 = '<div id="cs7" style="height:30%; line-height:1.35; overflow:hidden; white-space:nowrap; text-align:center; padding-bottom:8%;">' +
+  '<h2>Chapman Street</h2>' +
+  '<p>Free parking all day at this location.</p>' +
+  '<img src="assets/img/chapman-st.png" alt="image" style="margin:0 auto;">' +
+  '</div>';
 
 // Joel - variable below sets the location of all the markers in an array =============================
   var locations = [
@@ -120,7 +135,7 @@ function initialize() {
       { "lightness": 14 }
     ]
   }
-]
+];
 
   // Joel - Variable for the map styles ===============================================================
   var styledMap = new google.maps.StyledMapType(styles,
@@ -156,14 +171,14 @@ function initialize() {
     position: new google.maps.LatLng(locations[i][1], locations[i][2]),
     map: map,
     icon: image
-  })
+  });
 
   // Joel - Sets the onclick function for the text box to display =====================================
   google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
           infowindow.setContent(locations[i][0]);
           infowindow.open(map, marker);
-        }
+        };
       })(marker, i));
     }
 
