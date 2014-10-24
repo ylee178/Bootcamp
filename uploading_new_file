@@ -1,0 +1,8 @@
+*--------------Uploading files (not modification on the existing file)-------------------*
+
+- launch github app (follow pull request steps)
+
+- add a file to be uploaded in the cloned folder and sync 
+
+* in this case the file do not need to be merged
+

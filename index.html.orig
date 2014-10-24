@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,13 +7,16 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+=======
+    <link rel="stylesheet" href="stylesheet.css">
+>>>>>>> master
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script src="assets/js/custom.js"></script>
   </head>
- 
-
   <body>
+<<<<<<< HEAD
       <!-- logo and header -->
       <div class="col-md-6">
         <img class="img-responsive logo" src="assets/img/FPX-logo2.png" alt="logo for FPX">
@@ -25,22 +30,17 @@
       </div>
       
       <!-- division that contains the map -->
-    <div class="row">
       <div class="col-md-10 col-md-offset-1"  id="map-canvas">
       </div>
+  
+=======
+
+    <!-- division that contains the map -->
+    <div class="col-md-10 col-md-offset-1"  id="map-canvas">
+        
     </div>
 
-  <div class="row">
-	<div class="col-sm-12" id="footerSlideContainer">
-
-    <a href="about.html"><img src="about3.png" alt="" class="img-responsive"></a>
-      <img src="assets/FPX-fb.png"  alt="" class="social img-responsive">
-      <img src="assets/FPX-tweet.png"  alt="" class="social img-responsive">	
-  </div>
-
-
-</div>
-
-
-</body>
+>>>>>>> master
+  </body>
 </html>
+

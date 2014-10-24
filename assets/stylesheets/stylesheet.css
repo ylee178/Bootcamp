@@ -1,16 +1,17 @@
+/*Author: Decode*/
 /* Author: Decoders;
  * Title: stylesheet.scss;
 */
 /* Author: Decoders;
  * Title: stylesheet.scss;
 */
-
+/* line 8, ../sass/_body.scss */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-
+/* line 14, ../sass/_body.scss */
 #map-canvas {
   position: relative;
   overflow: hidden;
@@ -20,7 +21,7 @@ html, body {
   padding: 0;
 }
 
-
+/* line 24, ../sass/_body.scss */
 .logo {
   z-index: 100;
   position: fixed;
@@ -29,6 +30,7 @@ html, body {
   max-width: 350px;
 }
 
+/* line 32, ../sass/_body.scss */
 .header {
   position: fixed;
   top: 0;
@@ -37,7 +39,7 @@ html, body {
   width: 100%;
 }
 
-
+/* line 41, ../sass/_body.scss */
 .text {
   font-family: Helvetica, Sans-Serif;
   z-index: 99;
@@ -46,10 +48,12 @@ html, body {
   left: 45%;
 }
 
+/* line 49, ../sass/_body.scss */
 .text h2 {
   color: #f4d103;
 }
 
+/* line 53, ../sass/_body.scss */
 .text h3 {
   color: #fff;
 }
@@ -57,68 +61,81 @@ html, body {
 /* Media query for header background and text ============================================================== */
 @media screen and (max-width: 600px) {
   /* line 57, ../sass/_body.scss */
+  /* line 60, ../sass/_body.scss */
   .text h2 {
     font-size: 19px;
     line-height: 0;
   }
+
   /* line 61, ../sass/_body.scss */
+  /* line 65, ../sass/_body.scss */
   .text h3 {
     font-size: 10px;
   }
 
   /* line 65, ../sass/_body.scss */
+  /* line 70, ../sass/_body.scss */
   .header {
     max-height: 105px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
   /* line 72, ../sass/_body.scss */
+  /* line 76, ../sass/_body.scss */
   .text h2 {
     font-size: 40px;
     line-height: 0.5;
   }
+
   /* line 76, ../sass/_body.scss */
+  /* line 81, ../sass/_body.scss */
   .text h3 {
     font-size: 15px;
   }
 
   /* line 80, ../sass/_body.scss */
+  /* line 86, ../sass/_body.scss */
   .header {
     max-height: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 87, ../sass/_body.scss */
+  /* line 92, ../sass/_body.scss */
   .text h2 {
     font-size: 60px;
     line-height: 0.5;
   }
+
   /* line 91, ../sass/_body.scss */
+  /* line 97, ../sass/_body.scss */
   .text h3 {
     font-size: 20px;
   }
 
   /* line 95, ../sass/_body.scss */
+  /* line 102, ../sass/_body.scss */
   .header {
     max-height: 185px;
   }
 }
 /* -------- James - FOOTER -------------- */
-
+/* line 108, ../sass/_body.scss */
 #footerSlideContainer {
   background-image: url(../../background-top4.png);
   position: fixed;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   left: 0;
-    padding-left: 0;
-    padding-right: 0;
-    right: 0px;
-    z-index: 50;
+  padding-left: 0;
+  padding-right: 0;
+  right: 0px;
+  z-index: 50;
   height: 150px;
   display: inline;
 }
 
+/* line 122, ../sass/_body.scss */
 .social {
   margin-right: 10%;
   margin-top: 0;
