@@ -12,14 +12,43 @@ html, body {
   height: 100%;
 }
 
+/* ***Start Jared 301014 wrapper for sticky footer. 100% height fix*/
+  /* Wrapper for page content to push down footer */
+  #wrap-ace { 
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -14%;
+    /* Pad bottom by footer height */
+    padding: 0 0 14%;
+  }
 
-#map-canvas {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  min-height: 480px;
-  margin: 0;
-  padding: 0;
+  #wrap-king { 
+    height: 400px;
+  }
+
+
+/* ***Start Jared 301014 wrapper for sticky footer. 100% height fix*/
+
+.map-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+}
+
+#map-canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 
@@ -105,25 +134,6 @@ html, body {
     max-height: 185px;
   }
 }
-/* -------- James - FOOTER -------------- */
 
-#footerSlideContainer {
-  background-image: url(../img/background-top4.png);
-  position: fixed;
-  bottom:0;
-  width: 100%;
-  left: 0;
-    padding-left: 0;
-    padding-right: 0;
-    right: 0px;
-    z-index: 50;
-  height: 150px;
-  display: inline;
-}
 
-.social {
-  margin-right: 10%;
-  margin-top: 0;
-  display: inline;
-  float: right;
-}
+
