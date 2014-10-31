@@ -44,17 +44,17 @@ function initialize() {
   '<img src="assets/img/chapman-st.png" alt="image" style="margin:0 auto;">' +
   '</div>';
 
+
 // Joel - variable below sets the location of all the markers in an array =============================
   var locations = [
-    [contentString7, -36.860534, 174.752797, 7],
-    [contentString6, -36.865959, 174.777759, 6],
-    [contentString5, -36.865609, 174.762265, 5],
-    [contentString4, -36.866476, 174.763598, 4],
-    [contentString3, -36.861021, 174.761583, 3],
-    [contentString2, -36.861021, 174.761583, 2],
-    [contentString1, -36.868050, 174.753222, 1]
+    ['Free Parking All Day', -36.860534, 174.752797, 7],
+    ['Free Parking All Day', -36.865959, 174.777759, 6],
+    ['Free Parking All Day', -36.865609, 174.762265, 5],
+    ['Free Parking All Day', -36.866476, 174.763598, 4],
+    ['Free Parking All Day', -36.861021, 174.761583, 3],
+    ['Free Parking All Day', -36.861021, 174.761583, 2],
+    ['Free Parking All Day', -36.868050, 174.753222, 1]
   ];
-
   // Joel - The variable that sets the center of the map when the page loads. =========================
   var myLatlng = new google.maps.LatLng(-36.8656325,174.7608417);
 
@@ -159,7 +159,6 @@ function initialize() {
   // Joel - Map styling implimented ===================================================================
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
-
 
   var image = 'assets/img/marker.png';
 

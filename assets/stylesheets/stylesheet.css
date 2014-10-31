@@ -1,0 +1,220 @@
+/*Author: Decode*/
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* line 8, ../sass/_body.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, ../sass/_body.scss */
+#map-canvas {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 480px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 26, ../sass/_body.scss */
+.logo {
+  z-index: 100;
+  position: fixed;
+  margin-top: 10px;
+  width: 40%;
+  max-width: 350px;
+}
+
+/* line 34, ../sass/_body.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+/* line 43, ../sass/_body.scss */
+.text {
+  font-family: Helvetica, Sans-Serif;
+  z-index: 99;
+  padding-top: 10px;
+  position: fixed;
+  left: 45%;
+}
+
+/* line 51, ../sass/_body.scss */
+.text h2 {
+  color: #f4d103;
+}
+
+/* line 55, ../sass/_body.scss */
+.text h3 {
+  color: #fff;
+}
+
+/* Media query for header background and text ============================================================== */
+@media screen and (max-width: 600px) {
+  /* line 57, ../sass/_body.scss */
+  /* line 62, ../sass/_body.scss */
+  .text h2 {
+    font-size: 19px;
+    line-height: 0;
+  }
+
+  /* line 61, ../sass/_body.scss */
+  /* line 67, ../sass/_body.scss */
+  .text h3 {
+    font-size: 10px;
+  }
+
+  /* line 65, ../sass/_body.scss */
+  /* line 72, ../sass/_body.scss */
+  .header {
+    max-height: 105px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  /* line 72, ../sass/_body.scss */
+  /* line 78, ../sass/_body.scss */
+  .text h2 {
+    font-size: 40px;
+    line-height: 0.5;
+  }
+
+  /* line 76, ../sass/_body.scss */
+  /* line 83, ../sass/_body.scss */
+  .text h3 {
+    font-size: 15px;
+  }
+
+  /* line 80, ../sass/_body.scss */
+  /* line 88, ../sass/_body.scss */
+  .header {
+    max-height: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 87, ../sass/_body.scss */
+  /* line 94, ../sass/_body.scss */
+  .text h2 {
+    font-size: 60px;
+    line-height: 0.5;
+  }
+
+  /* line 91, ../sass/_body.scss */
+  /* line 99, ../sass/_body.scss */
+  .text h3 {
+    font-size: 20px;
+  }
+
+  /* line 95, ../sass/_body.scss */
+  /* line 104, ../sass/_body.scss */
+  .header {
+    max-height: 185px;
+  }
+}
+/* -------- James - FOOTER -------------- */
+/* line 110, ../sass/_body.scss */
+#footerSlideContainer {
+  background-image: url(../img/background-top4.png);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  right: 0px;
+  z-index: 50;
+  height: 150px;
+  display: inline;
+}
+
+/* line 124, ../sass/_body.scss */
+.social {
+  margin-right: 10%;
+  margin-top: 0;
+  display: inline;
+  float: right;
+}
+
+/* Style sheet for FPX About Page */
+/*** By Wade **********************/
+/* *****START Dickon 30/10/14
+File paths changed and house keeping*/
+/* line 6, ../sass/_about.scss */
+.wrapper-about {
+  background-image: url(../img/background-fill.jpg);
+  z-index: 1;
+}
+
+/* line 10, ../sass/_about.scss */
+.header-about {
+  background-image: url(../img/background-top-c.jpg);
+  top: 0;
+  z-index: 2;
+  display: inline;
+}
+
+/* line 16, ../sass/_about.scss */
+h4 {
+  font-size: 18px;
+  color: #f7f7f7;
+}
+
+/* line 21, ../sass/_about.scss */
+.text-about h4 {
+  padding: 10px;
+  font-size: 30px;
+  color: #f7f7f7;
+}
+
+/* line 26, ../sass/_about.scss */
+.text-about p {
+  padding: 10px;
+  font-size: 20px;
+  color: #f7f7f7;
+}
+
+/* line 31, ../sass/_about.scss */
+h3 {
+  font-size: 40px;
+  color: #f7f7f7;
+}
+
+/* line 35, ../sass/_about.scss */
+p {
+  font-size: 12px;
+  color: #f7f7f7;
+}
+
+/* line 39, ../sass/_about.scss */
+.info {
+  list-style: none;
+}
+
+/* line 42, ../sass/_about.scss */
+.about-logo {
+  z-index: 3;
+  margin: 0 auto;
+}
+
+/* line 46, ../sass/_about.scss */
+.facebook-link {
+  margin: 0 auto;
+}
+
+/* line 49, ../sass/_about.scss */
+.twitter-link {
+  margin: 0 auto;
+}
+
+/* ***** END Dickon 30/10/14
+File paths changed and house keeping*/
