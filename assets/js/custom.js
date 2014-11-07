@@ -184,3 +184,16 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+
+// James - slider for about page ======================================================================
+var open = false;
+  $( "#footerSlideContainer" ).click(function() {
+    if(open === false) {
+      $( "#footerSlideContainer" ).animate({height: ($(document).height())+'px'}, 'slow');
+      open = true;
+    } else {
+      $("#footerSlideContainer").animate({ height: '110px' }, 'slow');
+      open = false;
+    }
+  });
