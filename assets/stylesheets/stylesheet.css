@@ -13,17 +13,48 @@ html, body {
   height: 100%;
 }
 
-/* line 16, ../sass/_body.scss */
-#map-canvas {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  min-height: 480px;
-  margin: 0;
-  padding: 0;
+/* ***Start Jared 301014 wrapper for sticky footer. 100% height fix*/
+/* Wrapper for page content to push down footer */
+/* line 17, ../sass/_body.scss */
+#wrap-ace {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -14%;
+  /* Pad bottom by footer height */
+  padding: 0 0 14%;
 }
 
 /* line 26, ../sass/_body.scss */
+#wrap-king {
+  height: 400px;
+}
+
+/* ***Start Jared 301014 wrapper for sticky footer. 100% height fix*/
+/* line 33, ../sass/_body.scss */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+/* line 39, ../sass/_body.scss */
+#map-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 55, ../sass/_body.scss */
 .logo {
   z-index: 100;
   position: fixed;
@@ -32,7 +63,7 @@ html, body {
   max-width: 350px;
 }
 
-/* line 34, ../sass/_body.scss */
+/* line 63, ../sass/_body.scss */
 .header {
   position: fixed;
   top: 0;
@@ -41,7 +72,7 @@ html, body {
   width: 100%;
 }
 
-/* line 43, ../sass/_body.scss */
+/* line 72, ../sass/_body.scss */
 .text {
   font-family: Helvetica, Sans-Serif;
   z-index: 99;
@@ -50,12 +81,12 @@ html, body {
   left: 45%;
 }
 
-/* line 51, ../sass/_body.scss */
+/* line 80, ../sass/_body.scss */
 .text h2 {
   color: #f4d103;
 }
 
-/* line 55, ../sass/_body.scss */
+/* line 84, ../sass/_body.scss */
 .text h3 {
   color: #fff;
 }
@@ -63,158 +94,268 @@ html, body {
 /* Media query for header background and text ============================================================== */
 @media screen and (max-width: 600px) {
   /* line 57, ../sass/_body.scss */
-  /* line 62, ../sass/_body.scss */
+  /* line 91, ../sass/_body.scss */
   .text h2 {
     font-size: 19px;
     line-height: 0;
   }
 
   /* line 61, ../sass/_body.scss */
-  /* line 67, ../sass/_body.scss */
+  /* line 96, ../sass/_body.scss */
   .text h3 {
     font-size: 10px;
   }
 
   /* line 65, ../sass/_body.scss */
-  /* line 72, ../sass/_body.scss */
+  /* line 101, ../sass/_body.scss */
   .header {
     max-height: 105px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
   /* line 72, ../sass/_body.scss */
-  /* line 78, ../sass/_body.scss */
+  /* line 107, ../sass/_body.scss */
   .text h2 {
     font-size: 40px;
     line-height: 0.5;
   }
 
   /* line 76, ../sass/_body.scss */
-  /* line 83, ../sass/_body.scss */
+  /* line 112, ../sass/_body.scss */
   .text h3 {
     font-size: 15px;
   }
 
   /* line 80, ../sass/_body.scss */
-  /* line 88, ../sass/_body.scss */
+  /* line 117, ../sass/_body.scss */
   .header {
     max-height: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 87, ../sass/_body.scss */
-  /* line 94, ../sass/_body.scss */
+  /* line 123, ../sass/_body.scss */
   .text h2 {
     font-size: 60px;
     line-height: 0.5;
   }
 
   /* line 91, ../sass/_body.scss */
-  /* line 99, ../sass/_body.scss */
+  /* line 128, ../sass/_body.scss */
   .text h3 {
     font-size: 20px;
   }
 
   /* line 95, ../sass/_body.scss */
-  /* line 104, ../sass/_body.scss */
+  /* line 133, ../sass/_body.scss */
   .header {
     max-height: 185px;
   }
 }
-/* -------- James - FOOTER -------------- */
-/* line 110, ../sass/_body.scss */
-#footerSlideContainer {
-  background-image: url(../img/background-top4.png);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  right: 0px;
-  z-index: 50;
-  height: 150px;
-  display: inline;
-}
-
-/* line 124, ../sass/_body.scss */
-.social {
-  margin-right: 10%;
-  margin-top: 0;
-  display: inline;
-  float: right;
-}
-
 /* Style sheet for FPX About Page */
-/*** By Wade **********************/
-/* *****START Dickon 30/10/14
-File paths changed and house keeping*/
+/******** By DG 07/11/14 ********
+********************************/
+/******** STRUCTURE ********
+*******************************/
 /* line 6, ../sass/_about.scss */
-.wrapper-about {
-  background-image: url(../img/background-fill.jpg);
-  z-index: 1;
+#about-b {
+  background-image: url("../../assets/img/background-fill.jpg");
+  background-size: 100%;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f9f9f6;
 }
 
-/* line 10, ../sass/_about.scss */
-.header-about {
-  background-image: url(../img/background-top-c.jpg);
-  top: 0;
-  z-index: 2;
-  display: inline;
+/* line 15, ../sass/_about.scss */
+#top {
+  background-image: url("../../assets/img/background-top4.png");
+  width: 100%;
+  height: 110px;
 }
 
-/* line 16, ../sass/_about.scss */
-h4 {
-  font-size: 18px;
-  color: #f7f7f7;
+/* line 20, ../sass/_about.scss */
+.abouttest {
+  padding: 0;
 }
 
-/* line 21, ../sass/_about.scss */
-.text-about h4 {
-  padding: 10px;
+/******** GENERAL TYPOGRAPHY ********
+********************************/
+/* line 25, ../sass/_about.scss */
+h1 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-size: 30px;
-  color: #f7f7f7;
+  color: #f9f9f6;
 }
 
-/* line 26, ../sass/_about.scss */
-.text-about p {
-  padding: 10px;
-  font-size: 20px;
-  color: #f7f7f7;
+/* line 30, ../sass/_about.scss */
+h2 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #f9f9f6;
+  padding: 0;
 }
 
-/* line 31, ../sass/_about.scss */
+/* line 36, ../sass/_about.scss */
 h3 {
-  font-size: 40px;
-  color: #f7f7f7;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #f9f9f6;
 }
 
-/* line 35, ../sass/_about.scss */
-p {
-  font-size: 12px;
-  color: #f7f7f7;
+/* line 41, ../sass/_about.scss */
+#text-about {
+  padding: 10px;
 }
 
-/* line 39, ../sass/_about.scss */
-.info {
+/* line 44, ../sass/_about.scss */
+#team {
+  padding: 10px;
+}
+
+/* line 47, ../sass/_about.scss */
+.padding10px {
+  padding: 10px;
+}
+
+/* line 50, ../sass/_about.scss */
+.fp {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #f9f9f6;
+}
+
+/******** UL/LI ********
+********************************/
+/* line 57, ../sass/_about.scss */
+ul {
+  padding: 0;
+}
+
+/* line 60, ../sass/_about.scss */
+.ourinfo li {
   list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
 }
 
-/* line 42, ../sass/_about.scss */
-.about-logo {
-  z-index: 3;
+/* line 66, ../sass/_about.scss */
+.ourinfo li a {
+  padding: 0;
+}
+
+/* line 70, ../sass/_about.scss */
+a:hover, a:visited, a:link, a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+/******** padding ********
+********************************/
+/* line 77, ../sass/_about.scss */
+.about-name {
+  margin: 0;
+}
+
+/******** Images ********
+********************************/
+/* line 82, ../sass/_about.scss */
+.pic1 {
   margin: 0 auto;
+  padding: 0 auto;
+  height: 200px;
 }
 
-/* line 46, ../sass/_about.scss */
-.facebook-link {
-  margin: 0 auto;
+/******** emails ********
+********************************/
+/* line 89, ../sass/_about.scss */
+.email {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #f9f9f6;
 }
 
-/* line 49, ../sass/_about.scss */
-.twitter-link {
-  margin: 0 auto;
+/* line 94, ../sass/_about.scss */
+.email:hover a {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #2862dc;
 }
 
-/* ***** END Dickon 30/10/14
-File paths changed and house keeping*/
+/* ========================= 
+  MEDIA QUERYS - tablets devices 768px and up)   
+  ========================= */
+@media all and (min-width: 768px) {
+  /* =================================
+   
+   ================================== */
+ /******** GENERAL TYPOGRAPHY ********
+********************************/
+  /* line 108, ../sass/_about.scss */
+  h1 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    color: #f9f9f6;
+  }
+
+  /* line 113, ../sass/_about.scss */
+  h2 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #f9f9f6;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  /* line 120, ../sass/_about.scss */
+  h3 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #f9f9f6;
+  }
+
+  /* line 125, ../sass/_about.scss */
+  #text-about {
+    padding: 20px;
+  }
+
+  /* line 128, ../sass/_about.scss */
+  #team {
+    padding: 20px;
+  }
+
+  /* line 131, ../sass/_about.scss */
+  .padding10px {
+    padding: 20px;
+  }
+
+  /* line 134, ../sass/_about.scss */
+  .fp {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #f9f9f6;
+    margin-bottom: 35px;
+  }
+}
+/* MEDIA QUERYS - large devices (Desktop, 980px and up) */
+@media all and (min-width: 980px) {
+  /* line 144, ../sass/_about.scss */
+  .titleimg {
+    margin-left: 80px;
+  }
+}
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* line 5, ../sass/_footer.scss */
+#footerSlideContainer {
+  background-image: url("../../assets/img/background-top.jpg");
+  background-size: 960px 150px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 14%;
+  width: 100%;
+}

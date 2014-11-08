@@ -247,3 +247,14 @@ $("#fpx-logo").delay(200).animate({width:'90px'}, 1000).stop("#fpx-logo");
 }); 
 //------ JOEL ----- Header disappear and logo shrink 30/10/14 END.
 
+// James - slider for about page ======================================================================
+var open = false;
+  $( "#footerSlideContainer" ).click(function() {
+    if(open === false) {
+      $( "#footerSlideContainer" ).animate({height: ($(document).height())+'px'}, 'slow');
+      open = true;
+    } else {
+      $("#footerSlideContainer").animate({ height: '110px' }, 'slow');
+      open = false;
+    }
+  });
