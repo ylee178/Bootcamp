@@ -187,13 +187,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 // James - slider for about page ======================================================================
+
 var open = false;
   $( "#footerSlideContainer" ).click(function() {
     if(open === false) {
       $( "#footerSlideContainer" ).animate({height: ($(document).height())+'px'}, 'slow');
       open = true;
+
+// Jared - ajax after about slide ======================================================================     
+      //switch the page contents with ajax
+  
+  $( "#footerSlideContainer" ).delay(3000).load( "about.html", function() {
+  });
+
+//Jared End
+
     } else {
       $("#footerSlideContainer").animate({ height: '110px' }, 'slow');
       open = false;
     }
   });
+
+//James End
+
+
+
+

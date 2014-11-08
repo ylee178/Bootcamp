@@ -1,28 +1,101 @@
 /* Style sheet for FPX About Page */
-/*** By Wade **********************/
+/******** By DG 07/11/14 ********
+********************************/
 
+/******** STRUCTURE ********
+*******************************/
+#about-b{
+	background-image: url('../../assets/img/background-fill.jpg'); 
+	background-size: 960px 150px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f9f9f6;
+}
+#top{
+	background-image: url('../../assets/img/background-top4.png');
+	width: 100%;
+	height: 110px;
+}
+.abouttest{
+	padding: 0;
+}
+/******** GENERAL TYPOGRAPHY ********
+********************************/
+h1{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f9f9f6;
+}
+h2{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #f9f9f6;
+	padding: 0;
+}
+h3{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #f9f9f6;
+}
+#text-about{
+	padding: 10px;
+}
+#team{
+	padding: 10px;
+}
+.padding10px{
+	padding: 10px;
+}
+/******** UL/LI ********
+********************************/
+ul {
+	padding: 0;
+}
+.ourinfo li {
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	padding: 0;
+}
+.ourinfo li a{
+	padding: 0;
+}
+/******** padding ********
+********************************/
+.about-name{
+	margin: 0;
+}
+/******** Images ********
+********************************/
+.pic1{
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 200px;
+}
 
+/*** By Wade *********************
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
+"Helvetica Neue", 
+Helvetica, Arial, "Lucida Grande", sans-serif;
 .wrapper-about {
 	background-image: url(../background-fill.jpg);
 	z-index: 1;
-
-}
+	}
 .header-about {
 	 background-image: url(../background-top4.png);
 	 top: 0;
 	 z-index: 2;
 	 display: inline;
 }
-
 h4 {
 	font-size: 18px;
 	color: #f7f7f7;
 }
-
 .text-about {
 	padding: 10px;
 }
-
 .about-name {
 	font-size: 20px;
 	color: #fff;
@@ -34,15 +107,14 @@ p {
 .info {
 	list-style: none;
 }
-
 .about-logo {
 	z-index: 3;
 	margin: 0 auto;
 }
-
 .facebook-link {
 	margin: 0 auto;
 }
 .twitter-link {
 	margin: 0 auto;
 }
+*/
