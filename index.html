@@ -6,51 +6,58 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script src="assets/js/custom.js"></script>
   </head>
-    <body>
-      <div class="wrapper-index">
+ 
+
+  <body>
+    <!--     ***Start Jared 301014 Added by Jared for sticky footer fix -->
+    <div id="wrap-ace">
         <!-- logo and header -->
-        <!-- *****START Dickon 30/10/14 added -->
-        <!-- added bootstrap container and rows Dickon -->
-        <div class="container-fluid"><!-- Dickon 30/10/14 added -->
-          <div class="row"><!-- Dickon 30/10/14 added -->
-            <div class="col-md-6">
-              <img class="img-responsive logo" src="assets/img/FPX-logo2.png" alt="logo for FPX">
-              <img class="header" src="assets/img/header.png" alt="background for header">
-            </div><!-- end of col-md-6 -->
-          </div><!-- end of row --><!-- Dickon 30/10/14 end -->
-        </div><!-- end of container --><!-- *****END Dickon 30/10/14 -->
-  
-        <!-- header text -->
-        <!-- *****START Dickon 30/10/14 -->
-        <!-- added bootstrap container and rows Dickon-->
-        <div class="container-fluid"><!-- Dickon 30/10/14 added -->
-          <div class="row"><!-- Dickon 30/10/14 added -->
-            <div class="col-md-6 text text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="logo-div">
+              <img id="fpx-logo" class="logo" src="assets/img/FPX-logo2.png" alt="logo for FPX">
+            </div>
+            <img class="header header-shrink" src="assets/img/header.png" alt="background for header">
+          </div>
+          <!-- header text -->
+          <div class="col-md-6 text text-center">
+            <div class="header-shrink">
               <h2><strong>FREE PARKING</strong></h2>
               <h2>AUCKLAND</h2>
               <h3><strong>This is app is brought to you by DeCode</strong></h3> 
-            </div><!-- end of col-md-6 text text-center -->
-          </div><!-- end of row --><!-- Dickon 30/10/14 end -->
-        </div><!-- end of container --><!-- *****END Dickon 30/10/14 -->
-        
-        <!-- division that contains the map -->
-        <!-- *****START Dickon 30/10/14 added -->
-        <!-- The map has not been put in bootstrap container/rows. means map is 100% of screen all the time. Dickon-->
-        <div id="map-canvas"></div>
-        <!-- end of row --><!-- *****END Dickon 30/10/14 -->
-  
-        <div class="row">
-	        <div class="col-sm-12" id="footerSlideContainer">
-        <!-- *****START Dickon 30/10/14 added -->
-        <!-- Dickon 30/10/14 house keeping changed file paths for images -->
-          <a href="about.html"><img src="assets/img/about3.png" alt="" class="img-responsive"></a>
-            <img src="assets/img/fpx-fb.png"  alt="" class="social img-responsive">
-            <img src="assets/img/fpx-tweet.png"  alt="" class="social img-responsive">	
+            </div>
           </div>
-        <!-- *****END Dickon 30/10/14 house keeping -->
-        </div><!-- end of row -->
-    </body><!-- end of wrapper-index -->
+        </div>
+
+        <!-- ***Start Division that contains the map -->
+        <div class="row" id="wrap-king">
+          <div class="col-md-10 col-md-offset-1"  id="map-canvas">
+          </div>
+        </div>
+        <!-- ***End Division that contains the map -->
+    </div>
+
+        <!-- ***START Jared // 10-30-14 // Changed HTML and CSS to align with bootstrap. Added new columns and classes -->
+        <div class="container-fluid blockfpx" id="footerSlideContainer">
+            <div class="row">
+              <div class="col-xs-6">
+              <a href="aboutb.HTML"><img src="assets/img/about3.png" alt="" class="img-responsive" id="fpx"></a>
+              </div>
+              <div class="col-xs-3">
+              <img src="assets/img/FPX-fb.png"  alt="" class="social img-responsive">
+              </div>
+              <div class="col-xs-3">
+              <img src="assets/img/FPX-tweet.png"  alt="" class="social img-responsive">	
+              </div>
+            </div>
+      
+        <!-- ***END Jared // 10-30-14 // Changed HTML and CSS to align with bootstrap. Added new columns and classes -->
+            
+        <!-- ***END Jared // 10-30-14 // Changed HTML and CSS to align with bootstrap. Added new columns and classes -->
+        <!--     ***End Jared 301014 Added by Jared for sticky footer fix - Wrap Id -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+      <script src="assets/js/custom.js"></script>
+</body>
 </html>
