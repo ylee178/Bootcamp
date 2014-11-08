@@ -152,99 +152,210 @@ html, body {
     max-height: 185px;
   }
 }
-
-/* -------- James - FOOTER -------------- */
-/* line 110, ../sass/_body.scss */
-#footerSlideContainer {
-  background-image: url(../img/background-fill.jpg);
-  position: fixed;
-  bottom: 0;
+/* Style sheet for FPX About Page */
+/******** By DG 07/11/14 ********
+********************************/
+/******** STRUCTURE ********
+*******************************/
+/* line 6, ../sass/_about.scss */
+#about-b {
+  background-image: url("../../assets/img/background-fill.jpg");
+  background-size: 100%;
+  left: 0px;
+  bottom: 0px;
   width: 100%;
-  left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  right: 0px;
-  z-index: 100;
-  height: 150px;
-  display: inline;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f9f9f6;
 }
+
+/* line 15, ../sass/_about.scss */
 #top {
-  background-image: url(../img/background-top4.png);
+  background-image: url("../../assets/img/background-top4.png");
   width: 100%;
   height: 110px;
 }
 
-/* line 124, ../sass/_body.scss */
-.social {
-  margin-right: 10%;
-  margin-top: 0;
-  display: inline;
-  float: right;
+/* line 20, ../sass/_about.scss */
+.abouttest {
+  padding: 0;
 }
 
-
-/* Style sheet for FPX About Page */
-/*** By Wade **********************/
-/* line 5, ../sass/_about.scss */
-.wrapper-about {
-  background-image: url(../background-fill.jpg);
-  z-index: 1;
-}
-
-/* line 10, ../sass/_about.scss */
-.header-about {
-  background-image: url(../background-top4.png);
-  top: 0;
-  z-index: 2;
-  display: inline;
-}
-
-/* line 17, ../sass/_about.scss */
-h4 {
-  font-size: 18px;
-  color: #f7f7f7;
-}
-
-/* line 22, ../sass/_about.scss */
-.text-about {
-  padding: 10px;
-}
-
-/* line 26, ../sass/_about.scss */
-.about-name {
-  font-size: 20px;
-  color: #fff;
+/******** GENERAL TYPOGRAPHY ********
+********************************/
+/* line 25, ../sass/_about.scss */
+h1 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #f9f9f6;
 }
 
 /* line 30, ../sass/_about.scss */
-p {
-  font-size: 12px;
-  color: #f7f7f7;
+h2 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #f9f9f6;
+  padding: 0;
 }
 
-/* line 34, ../sass/_about.scss */
-.info {
+/* line 36, ../sass/_about.scss */
+h3 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #f9f9f6;
+}
+
+/* line 41, ../sass/_about.scss */
+#text-about {
+  padding: 10px;
+}
+
+/* line 44, ../sass/_about.scss */
+#team {
+  padding: 10px;
+}
+
+/* line 47, ../sass/_about.scss */
+.padding10px {
+  padding: 10px;
+}
+
+/* line 50, ../sass/_about.scss */
+.fp {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #f9f9f6;
+}
+
+/******** UL/LI ********
+********************************/
+/* line 57, ../sass/_about.scss */
+ul {
+  padding: 0;
+}
+
+/* line 60, ../sass/_about.scss */
+.ourinfo li {
   list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
 }
 
-/* line 38, ../sass/_about.scss */
-.about-logo {
-  z-index: 3;
+/* line 66, ../sass/_about.scss */
+.ourinfo li a {
+  padding: 0;
+}
+
+/* line 70, ../sass/_about.scss */
+a:hover, a:visited, a:link, a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+/******** padding ********
+********************************/
+/* line 77, ../sass/_about.scss */
+.about-name {
+  margin: 0;
+}
+
+/******** Images ********
+********************************/
+/* line 82, ../sass/_about.scss */
+.pic1 {
   margin: 0 auto;
+  padding: 0 auto;
+  height: 200px;
 }
 
-/* line 43, ../sass/_about.scss */
-.facebook-link {
-  margin: 0 auto;
+/******** emails ********
+********************************/
+/* line 89, ../sass/_about.scss */
+.email {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #f9f9f6;
 }
 
-/* line 46, ../sass/_about.scss */
-.twitter-link {
-  margin: 0 auto;
+/* line 94, ../sass/_about.scss */
+.email:hover a {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #2862dc;
 }
 
+/* ========================= 
+  MEDIA QUERYS - tablets devices 768px and up)   
+  ========================= */
+@media all and (min-width: 768px) {
+  /* =================================
+   
+   ================================== */
+ /******** GENERAL TYPOGRAPHY ********
+********************************/
+  /* line 108, ../sass/_about.scss */
+  h1 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    color: #f9f9f6;
+  }
+
+  /* line 113, ../sass/_about.scss */
+  h2 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #f9f9f6;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  /* line 120, ../sass/_about.scss */
+  h3 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #f9f9f6;
+  }
+
+  /* line 125, ../sass/_about.scss */
+  #text-about {
+    padding: 20px;
+  }
+
+  /* line 128, ../sass/_about.scss */
+  #team {
+    padding: 20px;
+  }
+
+  /* line 131, ../sass/_about.scss */
+  .padding10px {
+    padding: 20px;
+  }
+
+  /* line 134, ../sass/_about.scss */
+  .fp {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #f9f9f6;
+    margin-bottom: 35px;
+  }
+}
+/* MEDIA QUERYS - large devices (Desktop, 980px and up) */
+@media all and (min-width: 980px) {
+  /* line 144, ../sass/_about.scss */
+  .titleimg {
+    margin-left: 80px;
+  }
+}
 /* Author: Decoders;
  * Title: stylesheet.scss;
 */
 /* line 5, ../sass/_footer.scss */
-
+#footerSlideContainer {
+  background-image: url("../../assets/img/background-top.jpg");
+  background-size: 960px 150px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 14%;
+  width: 100%;
+}
