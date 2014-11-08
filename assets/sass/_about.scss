@@ -1,12 +1,11 @@
 /* Style sheet for FPX About Page */
 /******** By DG 07/11/14 ********
 ********************************/
-
 /******** STRUCTURE ********
 *******************************/
 #about-b{
 	background-image: url('../../assets/img/background-fill.jpg'); 
-	background-size: 960px 150px;
+	background-size: 100%;
     left:0px;
     bottom:0px;
     width:100%;
@@ -48,6 +47,20 @@ h3{
 .padding10px{
 	padding: 10px;
 }
+.fp{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f4d103;
+}
+.decodecolour{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f4d103;
+}
+.mywork{
+	color: #f4d103;
+	font-size: 30px;
+}
 /******** UL/LI ********
 ********************************/
 ul {
@@ -62,6 +75,12 @@ ul {
 .ourinfo li a{
 	padding: 0;
 }
+
+a:hover, a:visited, a:link, a:active{
+	outline:none;
+	text-decoration: none;
+}
+
 /******** padding ********
 ********************************/
 .about-name{
@@ -74,47 +93,64 @@ ul {
 	padding: 0 auto;
 	height: 200px;
 }
-
-/*** By Wade *********************
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 
-"Helvetica Neue", 
-Helvetica, Arial, "Lucida Grande", sans-serif;
-.wrapper-about {
-	background-image: url(../background-fill.jpg);
-	z-index: 1;
-	}
-.header-about {
-	 background-image: url(../background-top4.png);
-	 top: 0;
-	 z-index: 2;
-	 display: inline;
-}
-h4 {
-	font-size: 18px;
-	color: #f7f7f7;
-}
-.text-about {
-	padding: 10px;
-}
-.about-name {
+/******** emails ********
+********************************/
+.email{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
 	font-size: 20px;
-	color: #fff;
+	color: #f9f9f6;
 }
-p { 
-	font-size: 12px;
-	color:#f7f7f7;
+.email:hover a{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #2862dc;
 }
-.info {
-	list-style: none;
+/* ========================= 
+  MEDIA QUERYS - tablets devices 768px and up)   
+  ========================= */ 
+@media all and (min-width: 768px){
+  /* =================================
+   
+   ================================== */
+ /******** GENERAL TYPOGRAPHY ********
+********************************/
+h1{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #f9f9f6;
 }
-.about-logo {
-	z-index: 3;
-	margin: 0 auto;
+h2{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #f9f9f6;
+	padding: 0;
+	margin-bottom: 25px;
 }
-.facebook-link {
-	margin: 0 auto;
+h3{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #f9f9f6;
 }
-.twitter-link {
-	margin: 0 auto;
+#text-about{
+	padding: 20px;
 }
-*/
+#team{
+	padding: 20px;
+}
+.padding10px{
+	padding: 20px;
+}
+.fp{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f4d103;
+	margin-bottom: 35px;
+}
+
+}
+/* MEDIA QUERYS - large devices (Desktop, 980px and up) */	
+@media all and (min-width: 980px){
+	.titleimg{
+	margin-left:80px;
+}
+	}

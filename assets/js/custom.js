@@ -248,27 +248,27 @@ $("#fpx-logo").delay(200).animate({width:'90px'}, 1000).stop("#fpx-logo");
 //------ JOEL ----- Header disappear and logo shrink 30/10/14 END.
 
 // James - slider for about page ======================================================================
-
 var open = false;
-  $( "#footerSlideContainer" ).click(function() {
+  $( '#fpx-ab' ).click(function() {
     if(open === false) {
-      $( "#footerSlideContainer" ).animate({height: ($(document).height())+'px'}, 'slow');
-      open = true;
+      $('#footerSlideContainer' ).animate({height: ($(document).height())+'px'}, 'slow');
 
 // Jared - ajax after about slide ======================================================================     
       //switch the page contents with ajax
-  
-  $( "#footerSlideContainer" ).delay(3000).load( "about.html", function() {
-  });
-
-//Jared End
-
+      $('#footer-internal').delay(700).queue(function( nxt ) {
+          $(this).load('about.html #fpx-abc').hide().fadeIn(2000);
+          //The nxt() functionis used as part of the queu method
+          //to 
+          nxt();
+      });
+    open = true;
+//Jared End footer for the ajax call
+    
     } else {
-      $("#footerSlideContainer").animate({ height: '110px' }, 'slow');
-      open = false;
+      $('#footerSlideContainer').animate({ height: '110px' }, 'slow');
+    open = false;
     }
-  });
-
+});
 //James End
 
 
