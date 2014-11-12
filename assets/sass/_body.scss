@@ -85,7 +85,7 @@ html, body {
   color: #fff;
 }
 
-<<<<<<< HEAD
+
 /*----- Mel 11/11/14 - footer adjustments -----*/
 .about {
   padding: 5px;
@@ -97,8 +97,6 @@ html, body {
 /*----- NOTE - (.social) media query added below too -----*/
 /*---- Mel footer adjustment end ----*/
 
-=======
->>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
 /* Media query for header background and text ============================================================== */
 @media screen and (max-width: 600px) {
   /* line 57, ../sass/_body.scss */
@@ -115,13 +113,10 @@ html, body {
   .header {
     max-height: 105px;
   }
-<<<<<<< HEAD
 
   .social {
     height: 54px;
   }
-=======
->>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
 }
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
   /* line 72, ../sass/_body.scss */
@@ -155,6 +150,3 @@ html, body {
     max-height: 185px;
   }
 }
-
-
-

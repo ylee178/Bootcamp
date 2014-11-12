@@ -249,17 +249,7 @@ $("#fpx-logo").delay(200).animate({width:'90px'}, 1000).stop("#fpx-logo");
 
 // James - slider for about page ======================================================================
 var open = false;
-<<<<<<< HEAD
-  $( "#footerSlideContainer" ).click(function() {
-    if(open === false) {
-      $( "#footerSlideContainer" ).animate({height: ($(document).height())+'px'}, 'slow');
-      open = true;
-    } else {
-      $("#footerSlideContainer").animate({ height: '110px' }, 'slow');
-      open = false;
-    }
-  });
-=======
+
   $( '#fpx-ab' ).click(function() {
     if(open === false) {
       $('#footerSlideContainer' ).animate({height: ($(document).height())+'px'}, 'slow');
@@ -285,4 +275,3 @@ var open = false;
 
 
 
->>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
