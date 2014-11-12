@@ -1,0 +1,396 @@
+/*Author: Decode*/
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/* line 8, ../sass/_body.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ***Start Jared 301014 wrapper for sticky footer. 100% height fix*/
+/* Wrapper for page content to push down footer */
+/* line 17, ../sass/_body.scss */
+#wrap-ace {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -14%;
+  /* Pad bottom by footer height */
+  padding: 0 0 14%;
+}
+
+/* line 26, ../sass/_body.scss */
+#wrap-king {
+  height: 400px;
+}
+
+/* ***Start Jared 301014 wrapper for sticky footer. 100% height fix*/
+/* line 33, ../sass/_body.scss */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+/* line 39, ../sass/_body.scss */
+#map-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 55, ../sass/_body.scss */
+.logo {
+  z-index: 100;
+  position: fixed;
+  margin-top: 10px;
+  width: 40%;
+  max-width: 350px;
+}
+
+/* line 63, ../sass/_body.scss */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+/* line 72, ../sass/_body.scss */
+.text {
+  font-family: Helvetica, Sans-Serif;
+  z-index: 99;
+  padding-top: 10px;
+  position: fixed;
+  left: 45%;
+}
+
+/* line 80, ../sass/_body.scss */
+.text h2 {
+  color: #f4d103;
+}
+
+/* line 84, ../sass/_body.scss */
+.text h3 {
+  color: #fff;
+}
+
+/*----- Mel 11/11/14 - footer adjustments -----*/
+/* line 89, ../sass/_body.scss */
+.about {
+  padding: 5px;
+}
+
+/* line 92, ../sass/_body.scss */
+.social {
+  float: right;
+  padding: 0 15px;
+}
+
+/*----- NOTE - (.social) media query added below too -----*/
+/*---- Mel footer adjustment end ----*/
+/* Media query for header background and text ============================================================== */
+@media screen and (max-width: 600px) {
+  /* line 57, ../sass/_body.scss */
+  /* line 102, ../sass/_body.scss */
+  .text h2 {
+    font-size: 19px;
+    line-height: 0;
+  }
+
+  /* line 61, ../sass/_body.scss */
+  /* line 107, ../sass/_body.scss */
+  .text h3 {
+    font-size: 10px;
+  }
+
+  /* line 65, ../sass/_body.scss */
+  /* line 112, ../sass/_body.scss */
+  .header {
+    max-height: 105px;
+  }
+
+  /* line 116, ../sass/_body.scss */
+  .social {
+    height: 54px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  /* line 72, ../sass/_body.scss */
+  /* line 122, ../sass/_body.scss */
+  .text h2 {
+    font-size: 40px;
+    line-height: 0.5;
+  }
+
+  /* line 76, ../sass/_body.scss */
+  /* line 127, ../sass/_body.scss */
+  .text h3 {
+    font-size: 15px;
+  }
+
+  /* line 80, ../sass/_body.scss */
+  /* line 132, ../sass/_body.scss */
+  .header {
+    max-height: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 87, ../sass/_body.scss */
+  /* line 138, ../sass/_body.scss */
+  .text h2 {
+    font-size: 60px;
+    line-height: 0.5;
+  }
+
+  /* line 91, ../sass/_body.scss */
+  /* line 143, ../sass/_body.scss */
+  .text h3 {
+    font-size: 20px;
+  }
+
+  /* line 95, ../sass/_body.scss */
+  /* line 148, ../sass/_body.scss */
+  .header {
+    max-height: 185px;
+  }
+}
+/* Style sheet for FPX About Page */
+/******** By DG 07/11/14 ********
+********************************/
+/******** STRUCTURE ********
+*******************************/
+/* line 6, ../sass/_about.scss */
+#about-b {
+  background-image: url("../../assets/img/background-fill.jpg");
+  background-size: 100%;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #f9f9f6;
+}
+
+/* line 15, ../sass/_about.scss */
+#top {
+  background-image: url("../../assets/img/background-top4.png");
+  width: 100%;
+  height: 110px;
+}
+
+/* line 20, ../sass/_about.scss */
+.abouttest {
+  padding: 0;
+}
+
+/******** GENERAL TYPOGRAPHY ********
+********************************/
+/* line 25, ../sass/_about.scss */
+h1 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #f9f9f6;
+}
+
+/* line 30, ../sass/_about.scss */
+h2 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #f9f9f6;
+  padding: 0;
+}
+
+/* line 36, ../sass/_about.scss */
+h3 {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #f9f9f6;
+}
+
+/* line 41, ../sass/_about.scss */
+#text-about {
+  padding: 10px;
+}
+
+/* line 44, ../sass/_about.scss */
+#team {
+  padding: 10px;
+}
+
+/* line 47, ../sass/_about.scss */
+.padding10px {
+  padding: 10px;
+}
+
+/* line 50, ../sass/_about.scss */
+.fp {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  color: #f9f9f6;
+}
+
+/******** UL/LI ********
+********************************/
+/* line 57, ../sass/_about.scss */
+ul {
+  padding: 0;
+}
+
+/* line 60, ../sass/_about.scss */
+.ourinfo li {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+}
+
+/* line 66, ../sass/_about.scss */
+.ourinfo li a {
+  padding: 0;
+}
+
+/* line 70, ../sass/_about.scss */
+a:hover, a:visited, a:link, a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+/******** padding ********
+********************************/
+/* line 77, ../sass/_about.scss */
+.about-name {
+  margin: 0;
+}
+
+/******** Images ********
+********************************/
+/* line 82, ../sass/_about.scss */
+.pic1 {
+  margin: 0 auto;
+  padding: 0 auto;
+  height: 200px;
+}
+
+/******** emails ********
+********************************/
+/* line 89, ../sass/_about.scss */
+.email {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #f9f9f6;
+}
+
+/* line 94, ../sass/_about.scss */
+.email:hover a {
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #2862dc;
+}
+
+/* ========================= 
+  MEDIA QUERYS - tablets devices 768px and up)   
+  ========================= */
+@media all and (min-width: 768px) {
+  /* =================================
+   
+   ================================== */
+ /******** GENERAL TYPOGRAPHY ********
+********************************/
+  /* line 108, ../sass/_about.scss */
+  h1 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    color: #f9f9f6;
+  }
+
+  /* line 113, ../sass/_about.scss */
+  h2 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #f9f9f6;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
+  /* line 120, ../sass/_about.scss */
+  h3 {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: #f9f9f6;
+  }
+
+  /* line 125, ../sass/_about.scss */
+  #text-about {
+    padding: 20px;
+  }
+
+  /* line 128, ../sass/_about.scss */
+  #team {
+    padding: 20px;
+  }
+
+  /* line 131, ../sass/_about.scss */
+  .padding10px {
+    padding: 20px;
+  }
+
+  /* line 134, ../sass/_about.scss */
+  .fp {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #f9f9f6;
+    margin-bottom: 35px;
+  }
+}
+/* MEDIA QUERYS - large devices (Desktop, 980px and up) */
+@media all and (min-width: 980px) {
+  /* line 144, ../sass/_about.scss */
+  .titleimg {
+    margin-left: 80px;
+  }
+}
+/* Author: Decoders;
+ * Title: stylesheet.scss;
+*/
+/*----- Mel 11/11/14 - footer adjustments -----*/
+/* line 7, ../sass/_footer.scss */
+#footerSlideContainer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 15%;
+  /* changed height to 15% */
+  width: 100%;
+}
+
+/* line 16, ../sass/_footer.scss */
+.backgroundtop {
+  max-height: 150px;
+  background-image: url("../../assets/img/background-top.jpg");
+  background-repeat: repeat-x;
+  background-size: 960px 150px;
+}
+
+/* line 23, ../sass/_footer.scss */
+.backgroundfill {
+  height: 100%;
+  background-image: url("../../assets/img/background-fill.jpg");
+}
+
+/*---- Mel footer adjustment end ----*/

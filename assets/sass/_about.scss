@@ -1,0 +1,147 @@
+/* Style sheet for FPX About Page */
+/******** By DG 07/11/14 ********
+********************************/
+/******** STRUCTURE ********
+*******************************/
+#about-b{
+	background-image: url('../../assets/img/background-fill.jpg'); 
+	background-size: 100%;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f9f9f6;
+}
+#top{
+	background-image: url('../../assets/img/background-top4.png');
+	width: 100%;
+	height: 110px;
+}
+.abouttest{
+	padding: 0;
+}
+/******** GENERAL TYPOGRAPHY ********
+********************************/
+h1{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f9f9f6;
+}
+h2{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #f9f9f6;
+	padding: 0;
+}
+h3{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #f9f9f6;
+}
+#text-about{
+	padding: 10px;
+}
+#team{
+	padding: 10px;
+}
+.padding10px{
+	padding: 10px;
+}
+.fp{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f9f9f6;
+}
+/******** UL/LI ********
+********************************/
+ul {
+	padding: 0;
+}
+.ourinfo li {
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	padding: 0;
+}
+.ourinfo li a{
+	padding: 0;
+}
+
+a:hover, a:visited, a:link, a:active{
+	outline:none;
+	text-decoration: none;
+}
+
+/******** padding ********
+********************************/
+.about-name{
+	margin: 0;
+}
+/******** Images ********
+********************************/
+.pic1{
+	margin: 0 auto;
+	padding: 0 auto;
+	height: 200px;
+}
+/******** emails ********
+********************************/
+.email{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #f9f9f6;
+}
+.email:hover a{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #2862dc;
+}
+/* ========================= 
+  MEDIA QUERYS - tablets devices 768px and up)   
+  ========================= */ 
+@media all and (min-width: 768px){
+  /* =================================
+   
+   ================================== */
+ /******** GENERAL TYPOGRAPHY ********
+********************************/
+h1{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #f9f9f6;
+}
+h2{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #f9f9f6;
+	padding: 0;
+	margin-bottom: 25px;
+}
+h3{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	color: #f9f9f6;
+}
+#text-about{
+	padding: 20px;
+}
+#team{
+	padding: 20px;
+}
+.padding10px{
+	padding: 20px;
+}
+.fp{
+	font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #f9f9f6;
+	margin-bottom: 35px;
+}
+
+}
+/* MEDIA QUERYS - large devices (Desktop, 980px and up) */	
+@media all and (min-width: 980px){
+	.titleimg{
+	margin-left:80px;
+}
+	}
