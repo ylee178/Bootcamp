@@ -91,6 +91,7 @@ html, body {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /*----- Mel 11/11/14 - footer adjustments -----*/
 /* line 89, ../sass/_body.scss */
 .about {
@@ -109,18 +110,29 @@ html, body {
 @media screen and (max-width: 600px) {
   /* line 57, ../sass/_body.scss */
   /* line 102, ../sass/_body.scss */
+=======
+/* Media query for header background and text ============================================================== */
+@media screen and (max-width: 600px) {
+  /* line 57, ../sass/_body.scss */
+  /* line 91, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .text h2 {
     font-size: 19px;
     line-height: 0;
   }
 
   /* line 61, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 107, ../sass/_body.scss */
+=======
+  /* line 96, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .text h3 {
     font-size: 10px;
   }
 
   /* line 65, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 112, ../sass/_body.scss */
   .header {
     max-height: 105px;
@@ -134,39 +146,69 @@ html, body {
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
   /* line 72, ../sass/_body.scss */
   /* line 122, ../sass/_body.scss */
+=======
+  /* line 101, ../sass/_body.scss */
+  .header {
+    max-height: 105px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  /* line 72, ../sass/_body.scss */
+  /* line 107, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .text h2 {
     font-size: 40px;
     line-height: 0.5;
   }
 
   /* line 76, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 127, ../sass/_body.scss */
+=======
+  /* line 112, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .text h3 {
     font-size: 15px;
   }
 
   /* line 80, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 132, ../sass/_body.scss */
+=======
+  /* line 117, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .header {
     max-height: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 87, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 138, ../sass/_body.scss */
+=======
+  /* line 123, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .text h2 {
     font-size: 60px;
     line-height: 0.5;
   }
 
   /* line 91, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 143, ../sass/_body.scss */
+=======
+  /* line 128, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .text h3 {
     font-size: 20px;
   }
 
   /* line 95, ../sass/_body.scss */
+<<<<<<< HEAD
   /* line 148, ../sass/_body.scss */
+=======
+  /* line 133, ../sass/_body.scss */
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
   .header {
     max-height: 185px;
   }
@@ -368,6 +410,7 @@ a:hover, a:visited, a:link, a:active {
 /* Author: Decoders;
  * Title: stylesheet.scss;
 */
+<<<<<<< HEAD
 /*----- Mel 11/11/14 - footer adjustments -----*/
 /* line 7, ../sass/_footer.scss */
 #footerSlideContainer {
@@ -394,3 +437,15 @@ a:hover, a:visited, a:link, a:active {
 }
 
 /*---- Mel footer adjustment end ----*/
+=======
+/* line 5, ../sass/_footer.scss */
+#footerSlideContainer {
+  background-image: url("../../assets/img/background-top.jpg");
+  background-size: 960px 150px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 14%;
+  width: 100%;
+}
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5

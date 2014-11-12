@@ -249,6 +249,7 @@ $("#fpx-logo").delay(200).animate({width:'90px'}, 1000).stop("#fpx-logo");
 
 // James - slider for about page ======================================================================
 var open = false;
+<<<<<<< HEAD
   $( "#footerSlideContainer" ).click(function() {
     if(open === false) {
       $( "#footerSlideContainer" ).animate({height: ($(document).height())+'px'}, 'slow');
@@ -258,3 +259,30 @@ var open = false;
       open = false;
     }
   });
+=======
+  $( '#fpx-ab' ).click(function() {
+    if(open === false) {
+      $('#footerSlideContainer' ).animate({height: ($(document).height())+'px'}, 'slow');
+
+// Jared - ajax after about slide ======================================================================     
+      //switch the page contents with ajax
+      $('#footer-internal').delay(700).queue(function( nxt ) {
+          $(this).load('about.html #fpx-abc').hide().fadeIn(2000);
+          //The nxt() functionis used as part of the queu method
+          //to 
+          nxt();
+      });
+    open = true;
+//Jared End footer for the ajax call
+    
+    } else {
+      $('#footerSlideContainer').animate({ height: '110px' }, 'slow');
+    open = false;
+    }
+});
+//James End
+
+
+
+
+>>>>>>> b9a15861502c396aa5c78ce2f33644aff2f1ccf5
